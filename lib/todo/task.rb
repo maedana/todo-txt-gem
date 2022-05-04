@@ -285,7 +285,7 @@ module Todo
       elsif priority.nil?
         -1
       else
-        other.priority <=> priority
+        priority <=> other.priority
       end
     end
 

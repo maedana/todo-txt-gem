@@ -385,7 +385,7 @@ describe Todo::Task do
       task1 = Todo::Task.new '(A) Top priority!'
       task2 = Todo::Task.new '(B) Not quite so high.'
 
-      assertion = task1 > task2
+      assertion = task1 < task2
       expect(assertion).to eq(true)
     end
 
