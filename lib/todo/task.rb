@@ -281,9 +281,9 @@ module Todo
       if priority.nil? && other.priority.nil?
         0
       elsif other.priority.nil?
-        1
-      elsif priority.nil?
         -1
+      elsif priority.nil?
+        1
       else
         priority <=> other.priority
       end

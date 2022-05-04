@@ -394,7 +394,7 @@ describe Todo::Task do
       task2 = Todo::Task.new '(B) Not quite so high.'
 
       assertion = task1 < task2
-      expect(assertion).to eq(true)
+      expect(assertion).to eq(false)
     end
 
     it 'should be able to compare two tasks without priority' do
